@@ -17,9 +17,13 @@ function setInputFilter(textbox, inputFilter) {
 }
 
 
-// Install input filters.
-setInputFilter(document.getElementById("intTextBox"), function(value) {
-  return /^-?\d*$/.test(value); });
+// Install input filters. 
+setInputFilter(
+      document.getElementById("intTextBox"), function(value) { // input
+        return /^-?\d*$/.test(value);  
+      }
+);
+//otherexamples
 setInputFilter(document.getElementById("uintTextBox"), function(value) {
   return /^\d*$/.test(value); });
 setInputFilter(document.getElementById("intLimitTextBox"), function(value) {
